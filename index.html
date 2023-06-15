@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+  <body>
+     <h2>JavaScript les boucles </h2>
+
+        
+     
+     <script>
+      let boucle = prompt('Quel type de boucle souhaitez vous connaitre souhaitez vous ? boucle1, boucle2, boucle3');
+
+
+const type = {
+    boucle1: 'for',
+    boucle2: 'while',
+    boucle3: 'do_while'
+};
+
+switch(boucle){
+    case 'boucle1' :{
+        alert('la boucle '+ type.boucle1+'  crée une boucle composée de trois expressions optionnelles séparées par des points-virgules et encadrées entre des parenthèses qui sont suivies par une instruction' );
+        break;
+    }
+    case 'boucle2' :{
+        alert('la boucle '+ type.boucle2+'  permet de créer une boucle qui s\'exécute tant qu\'une condition de test est vérifiée. La condition est évaluée avant d\'exécuter l\'instruction contenue dans la boucle.' );
+        break;
+    }
+    case 'boucle3' :{
+        alert('la boucle '+ type.boucle3+'  crée une boucle qui exécute une instruction jusqu\'à ce qu\'une condition de test ne soit plus vérifiée. La condition est testée après que l\'instruction soit exécutée, le bloc d\'instructions défini dans la boucle est donc exécuté au moins une fois' );
+        break;
+    }
+    default:
+        alert('Veuillez choisir un boucle proposé');
+}
+     </script>
+   </body>
+</html>
